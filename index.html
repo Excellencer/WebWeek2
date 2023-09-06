@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebWeek2</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css">
+  </head>
+
+  <body>
+    <table id="database">
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Admin</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <tbody id="database-body">
+        <tr>
+          <td>Webguru</td>
+          <td>example@gmail.com</td>
+          <td>X</td>
+        </tr>
+        <tr>
+          <td>Webnovice</td>
+          <td>example@hotmail.com</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>JSnoob</td>
+          <td>example@ahaa.net</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <form action="" metchod="GET" id="user">
+      <fieldset>
+        <input type="text" name="Username" id="input-username" />
+        <input type="text" name="Email" id="input-email" />
+        <input type="checkbox" name="Admin" id="input-admin" />
+        <input type="submit" name="Submit" id="submit-data" />
+      </fieldset>
+    </form>
+    <button type="button" id="empty-table">
+      Empty table
+    </button>
+    <script src="src/index.js" defer></script>
+  </body>
+</html>
