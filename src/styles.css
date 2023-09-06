@@ -1,4 +1,8 @@
 body {
     font-family: sans-serif;
   }
-  
+
+.profilePic {
+    height: 64;
+    width: 64;
+  }

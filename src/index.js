@@ -32,6 +32,27 @@ function initializeCode() {
     }
     td.appendChild(document.createTextNode(admin));
     tr.appendChild(td);
+
+    //help with uploading an image from GreatStack youtube channel's video https://www.youtube.com/watch?v=xXrs4j-p3yE
+    let inputImage = document.getElementById("input-image")
+    console.log(inputImage.files.length)
+    if (inputImage.files.length != 0) {
+      let profilePic = document.createElement('img');
+    
+      profilePic.setAttribute("id", "profilePic");
+      profilePic.setAttribute("class", "profilePic");
+    
+    
+      profilePic.src = URL.createObjectURL(inputImage.files[0])
+      profilePic.height = 64
+      profilePic.width = 64
+
+      let imageTd = document.createElement("td");
+      imageTd.appendChild(profilePic);
+      
+      tr.appendChild(imageTd);
+    } 
+    
     dbBody.appendChild(tr);
   });
 
